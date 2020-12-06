@@ -1,0 +1,23 @@
+{
+    "name": "correctJP",
+    "version": "0.1.0",
+    "main": "",
+    "repository": "git@github.com:DevSubmarinonline/correctJP.git",
+    "author": "YamaD <yamad@xn--d-8o2b.com>",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.2.1",
+        "sass": "^1.30.0"
+    },
+    "scripts": {
+        "fmt": "prettier --write 'src/**/*.{js,json,md,html}' && prettier --write 'api/**/*.{js,json}'",
+        "bundle": "npm run bundle:www && npm run bundle:api",
+        "bundle:www": "parcel build -d pub --public-url ./ src/*.html",
+        "bundle:api": "parcel build -d api --public-url ./ api/*.js",
+        "build": "npm run build:sass && npm run bundle",
+        "build:sass": "sass -s compressed src/css:src/css",
+        "postbuild": "cp -r static/* pub/"
+    }
+}

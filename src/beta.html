@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>怪レい日本语</title>
+    <meta property="og:url" content="correctjp.work" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="怪レい日本语ジェネレーター" />
+    <meta
+      property="og:description"
+      content="贵樣は正レい文章を生成ずゑことがてきまず"
+    />
+    <meta property="og:site_name" content="怪レい日本语" />
+    <meta property="og:image" content="https://correctjp.work/cjp.png" />
+    <meta name="twitter:card" content="summary" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+      }
+
+      #navbar {
+        background-color: red;
+        width: 100vw;
+        text-align: center;
+        position: relative;
+        height: 50px;
+      }
+
+      .footer {
+        background-color: lightgray;
+        width: 100vw;
+        text-align: center;
+        position: absolute;
+        height: 50px;
+        bottom: 0px;
+      }
+
+      .navbar-title,
+      .text-center {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100vw;
+        height: 100%;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fcfcfc;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: 20px;
+      }
+
+      .navbar-title {
+        text-align: left;
+        padding-left: 80px;
+      }
+
+      .icon-brand {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 30px;
+      }
+
+      #inputBox {
+        width: 45vw;
+        height: calc(100vh - 100px);
+        float: left;
+      }
+
+      #outputBox {
+        width: 45vw;
+        height: calc(100vh - 100px);
+        float: right;
+      }
+
+      #inputBox,
+      #outputBox {
+        padding: 20px;
+        font-size: 15px;
+        resize: none;
+      }
+
+      .toolBar {
+        width: 10vw;
+        float: left;
+        height: calc(100vh - 100px);
+      }
+
+      button {
+        background: none;
+        font-size: 25px;
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+      }
+
+      button:active {
+        background-color: lightslategrey;
+      }
+
+      .generatecopy {
+        width: 100%;
+        height: 50%;
+        line-height: 50%;
+        font-size: 50px;
+      }
+
+      .copytoclipboard,
+      .delete {
+        width: 100%;
+        height: 25%;
+        line-height: 25%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="navbar">
+        <img src="./cjp.png" class="icon-brand" />
+        <a class="navbar-title" href="#">怪レい日本语</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <!-- 入力部分 -->
+        <textarea
+          id="inputBox"
+          class="form-control"
+          placeholder="変換する文章を入力..."
+        ></textarea>
+        <script>
+          document.getElementById('inputBox').focus()
+        </script>
+        <!-- 各種ボタン -->
+        <div class="toolBar">
+          <button
+            id="doGenAndCopy"
+            class="generatecopy fas fa-angle-double-right"
+          ></button>
+          <button id="doCopy" class="copytoclipboard fas fa-copy"></button>
+          <button
+            class="delete fas fa-trash"
+            onclick="document.getElementById('outputBox').value=''"
+          ></button>
+        </div>
+        <!-- 出力部分 -->
+        <textarea
+          id="outputBox"
+          class="form-control"
+          placeholder="怪レい日本语が出力されまず！"
+        ></textarea>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="text-center">© 2020 山D</p>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

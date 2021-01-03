@@ -1,6 +1,6 @@
 {
     "name": "correctJP",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "main": "",
     "repository": "git@github.com:DevSubmarinonline/correctJP.git",
     "author": "YamaD <yamad@xn--d-8o2b.com>",
@@ -9,7 +9,7 @@
     "devDependencies": {
         "parcel-bundler": "^1.12.4",
         "prettier": "^2.2.1",
-        "sass": "^1.30.0"
+        "sass": "^1.32.0"
     },
     "scripts": {
         "fmt": "prettier --write 'src/**/*.{js,json,md,html}' && prettier --write 'api/**/*.{js,json}'",

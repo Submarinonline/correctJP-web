@@ -1,4 +1,4 @@
-const { translate } = require('./cjp.js')
+const { translate } = require('cjp')
 
 module.exports = (req, res) => {
     try {

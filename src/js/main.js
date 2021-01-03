@@ -1,4 +1,4 @@
-const { translate } = require('./cjp')
+const { translate } = require('cjp')
 
 const copy = element => {
     if (!element.value) return

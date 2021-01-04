@@ -1,6 +1,6 @@
 {
     "name": "correctJP-web",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "main": "",
     "repository": "git@github.com:DevSubmarinonline/correctJP-web.git",
     "author": "YamaD <yamad@dyama.net>",
@@ -12,7 +12,7 @@
         "sass": "^1.32.0"
     },
     "dependencies": {
-        "cjp": "^0.1.0"
+        "cjp": "^0.2.1"
     },
     "scripts": {
         "fmt": "prettier --write 'src/**/*.{js,json,md,html}' && prettier --write 'api/**/*.{js,json}'",

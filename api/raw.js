@@ -3,9 +3,9 @@ const { translate } = require('cjp')
 module.exports = (req, res) => {
     try {
         let reqData
-        if (req.body.t) {
+        if (req.body) {
             reqData = req.body.t
-        } else if (req.query.t) {
+        } else if (req.query) {
             reqData = req.query.t
         } else {
             throw 'No target text found'

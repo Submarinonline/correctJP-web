@@ -25,6 +25,7 @@
 </p>
 
 <h2>APIとそゐ使い方</h2>
+
 <h3>/api/translate</h3>
 ※ /api/ は /api/translate ゐ卫亻刂マヌてず。(內部てrewriteレていまず)
 <ul>
@@ -34,13 +35,13 @@
       <li>
         <dl>
           <dt>?data=</dt>
-          <dd>utf-8 文字列</dd>
+          <dd>URL卫ソコード済み 文字列</dd>
         </dl>
       </li>
       <li>
         <dl>
           <dt>?data64=</dt>
-          <dd>base64 卫ソコード济み utf-8 文字列</dd>
+          <dd>URL卫ソコード济み base64文字列</dd>
         </dl>
       </li>
     </ul>
@@ -57,7 +58,33 @@
       <li>
         <dl>
           <dt>data64</dt>
-          <dd>base64 卫ソコード济み utf-8 文字列</dd>
+          <dd>base64卫ソコード济み utf-8文字列</dd>
+        </dl>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3>/api/raw</h3>
+<ul>
+  <li>
+    GET (query)
+    <ul>
+      <li>
+        <dl>
+          <dt>?t=</dt>
+          <dd>URL卫ソコード済み 文字列</dd>
+        </dl>
+      </li>
+    </ul>
+  </li>
+  <li>
+    POST (form or json)
+    <ul>
+      <li>
+        <dl>
+          <dt>t</dt>
+          <dd>utf-8 文字列</dd>
         </dl>
       </li>
     </ul>

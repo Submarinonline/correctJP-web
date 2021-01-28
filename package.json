@@ -12,7 +12,7 @@
         "sass": "^1.32.5"
     },
     "dependencies": {
-        "cjp": "^0.4.3"
+        "cjp": "^0.4.4"
     },
     "scripts": {
         "fmt": "prettier --write 'src/**/*.{js,json,md,html}' && prettier --write 'api/**/*.{js,json}'",

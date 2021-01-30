@@ -1473,10 +1473,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cjp@^0.4.4:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/cjp/-/cjp-0.4.5.tgz#97a85e40c233532d9091b279ad1868b637a63f4e"
-  integrity sha512-Wx7bYNOGvJDdoPfuhNAzCqS0m8pXv/dJKpoP5wwWUtj4B37Olqu7VghlZ8fO7vSGZAo/elowBiSl1UFT/oE0yQ==
+cjp@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/cjp/-/cjp-0.4.6.tgz#811ed0f748d1d8779392389547114fc15b3cab74"
+  integrity sha512-DoKPdApT6P/cjYwPpiSHswegS+kqZBKtdDYAhgQ2vP9WIkk/XlBM26QYzWoRd/ZzMo5C2qXbtskLYBvlQbiNzA==
 
 class-utils@^0.3.5:
   version "0.3.6"

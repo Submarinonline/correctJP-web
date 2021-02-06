@@ -1,26 +1,20 @@
 {
     "name": "correctJP-web",
-    "version": "0.3.1",
-    "main": "",
     "repository": "git@github.com:DevSubmarinonline/correctJP-web.git",
-    "author": "YamaD <yamad@dyama.net>",
+    "author": "YamaD <yamad@submarin.online>",
     "license": "MIT",
-    "private": true,
-    "devDependencies": {
-        "parcel-bundler": "^1.12.4",
-        "prettier": "^2.2.1",
-        "sass": "^1.32.6"
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "start": "nuxt start"
     },
     "dependencies": {
-        "cjp": "^0.5.1"
+        "cjp": "^0.5.2",
+        "nuxt": "^2.14.12",
+        "nuxt-clipboard2": "^0.2.1"
     },
-    "scripts": {
-        "fmt": "prettier --write 'src/**/*.{js,json,md,html}' && prettier --write 'api/**/*.{js,json}'",
-        "bundle": "npm run bundle:www && npm run bundle:api",
-        "bundle:www": "parcel build -d pub --public-url ./ src/*.html",
-        "bundle:api": "parcel build -d api --public-url ./ api/*.js",
-        "build": "npm run build:sass && npm run bundle",
-        "build:sass": "sass -s compressed src/css:src/css",
-        "postbuild": "cp -r static/* pub/"
+    "devDependencies": {
+        "@nuxtjs/tailwindcss": "^3.4.2"
     }
 }

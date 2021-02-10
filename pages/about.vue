@@ -57,7 +57,7 @@ export default {
             meta: {
                 title: '怪レい日本语について',
                 description: '怪日语ゐ极度解说',
-                url: 'https://correctjp.work/about'
+                url: 'https://correctjp.work/about/'
             },
             result: ''
         }

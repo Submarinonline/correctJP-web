@@ -23,7 +23,7 @@ export default {
             meta: {
                 title: '怪レい日本语アナライザー',
                 description: '贵樣ゐ正レい文章を解析レまず',
-                url: 'https://correctjp.work/analyzer'
+                url: 'https://correctjp.work/analyze/'
             },
             result: ''
         }

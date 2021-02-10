@@ -4,17 +4,29 @@
     >
         <div class="px-16 py-2">
             <h1>
-                <nuxt-link class="text-gray-100 focus:outline-none" to="/">{{
-                    title
-                }}</nuxt-link>
+                <a
+                    class="text-gray-100 hover:text-gray-100 focus:outline-none"
+                    href="#"
+                    >{{ title }}</a
+                >
             </h1>
         </div>
         <div class="px-16 flex select-none focus:outline-none">
-            <nuxt-link class="text-gray-300 focus:outline-none" to="/analyzer"
-                >怪日语分析</nuxt-link
+            <nuxt-link
+                class="text-gray-100 hover:text-gray-100 focus:outline-none"
+                to="/"
+                >ヅ卫ネレーター</nuxt-link
             >
             <div class="mx-4 border"></div>
-            <nuxt-link class="text-gray-300 focus:outline-none" to="/about"
+            <nuxt-link
+                class="text-gray-100 hover:text-gray-100 focus:outline-none"
+                to="/analyzer/"
+                >マナう亻ザ</nuxt-link
+            >
+            <div class="mx-4 border"></div>
+            <nuxt-link
+                class="text-gray-100 hover:text-gray-100 focus:outline-none"
+                to="/about/"
                 >怪日语について</nuxt-link
             >
         </div>

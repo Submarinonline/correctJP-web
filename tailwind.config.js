@@ -9,13 +9,13 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
+            colors: {
+                'paper-gray': '#f8f8f8',
+                'night-gray': '#343a40'
+            },
             inset: {
                 '1/2': '50%'
             }
         }
-    },
-    variants: {
-        extend: {}
-    },
-    plugins: []
+    }
 }

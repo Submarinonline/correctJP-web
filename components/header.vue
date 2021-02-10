@@ -1,16 +1,26 @@
 <template>
     <header
-        class="flex justify-between items-center bg-gray-800 text-gray-200 font-bold"
+        class="flex justify-between items-center bg-night-gray text-gray-200 font-bold"
     >
-        <h1 class="px-16 py-2">{{ title }}</h1>
-        <nuxt-link
-            class="px-16 text-gray-300 select-none"
-            to="/about"
-            target="_blank"
-            >怪日语について</nuxt-link
-        >
+        <div class="px-16 py-2">
+            <h1>
+                <nuxt-link class="text-gray-100 focus:outline-none" to="/">{{
+                    title
+                }}</nuxt-link>
+            </h1>
+        </div>
+        <div class="px-16 flex select-none focus:outline-none">
+            <nuxt-link class="text-gray-300 focus:outline-none" to="/analyzer"
+                >怪日语分析</nuxt-link
+            >
+            <div class="mx-4 border"></div>
+            <nuxt-link class="text-gray-300 focus:outline-none" to="/about"
+                >怪日语について</nuxt-link
+            >
+        </div>
     </header>
 </template>
+
 <script>
 export default {
     props: {
@@ -18,8 +28,3 @@ export default {
     }
 }
 </script>
-<style scoped>
-header {
-    background-color: #343a40;
-}
-</style>

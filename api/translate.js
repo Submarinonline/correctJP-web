@@ -1,4 +1,4 @@
-const { translate } = require('cjp')
+const { generate } = require('cjp')
 
 module.exports = (req, res) => {
     try {
@@ -19,11 +19,12 @@ module.exports = (req, res) => {
             throw 'No text found'
         }
         try {
+            const resData = generate(reqData)
             res.status(200).json({
                 stats: 200,
                 msg: 'OK',
-                data: translate(reqData),
-                data64: Buffer.from(translate(reqData)).toString('base64')
+                data: resData,
+                data64: Buffer.from(resData).toString('base64')
             })
         } catch (err) {
             res.status(500).json({

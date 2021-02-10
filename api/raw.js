@@ -1,4 +1,4 @@
-const { translate } = require('cjp')
+const { generate } = require('cjp')
 
 module.exports = (req, res) => {
     try {
@@ -11,7 +11,7 @@ module.exports = (req, res) => {
             throw 'No target text found'
         }
         try {
-            res.status(200).send(translate(reqData))
+            res.status(200).send(generate(reqData))
         } catch (err) {
             res.status(500).send('Server Error')
         }

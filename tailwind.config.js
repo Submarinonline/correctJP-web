@@ -8,6 +8,9 @@ module.exports = {
     ],
     darkMode: 'class',
     theme: {
+        // fontFamily: {
+        //     sans: ['Noto Sans JP', 'sans-serif']
+        // },
         extend: {
             colors: {
                 'paper-gray': '#f8f8f8',

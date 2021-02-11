@@ -17,13 +17,13 @@
                 to="/"
                 >ヅ卫ネレーター</nuxt-link
             >
-            <div class="mx-4 border"></div>
+            <div class="mx-4 border-l-2"></div>
             <nuxt-link
                 class="text-gray-100 hover:text-gray-100 focus:outline-none"
                 to="/analyzer/"
                 >マナう亻ザ</nuxt-link
             >
-            <div class="mx-4 border"></div>
+            <div class="mx-4 border-l-2"></div>
             <nuxt-link
                 class="text-gray-100 hover:text-gray-100 focus:outline-none"
                 to="/about/"

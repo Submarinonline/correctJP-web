@@ -4,11 +4,12 @@
             class="w-2/5 mx-4 ml-auto p-4 flex-grow rounded-lg bg-paper-gray shadow-md hover:shadow-lg focus:outline-none"
             placeholder="変換する文章を入力..."
             @input="result = generate($event.target.value)"
+            ref="inputBox"
             v-scroll-sync
         ></textarea>
         <textarea
-            class="w-2/5 mx-4 mr-auto p-4 flex-grow rounded-lg bg-paper-gray shadow-md hover:shadow-lg focus:outline-none focus:shadow-lg focus:text-bold"
-            placeholder="怪レい日本语が出力されまず！"
+            class="w-2/5 mx-4 mr-auto p-4 flex-grow rounded-lg bg-paper-gray shadow-md hover:shadow-lg focus:outline-none"
+            placeholder="怪レい日本语が出力され、\n贵樣はクリックしてコピーずゑことがてきゑ！"
             v-model="result"
             @click="clipResult"
             @keyup.space="clipResult"
@@ -58,6 +59,7 @@ export default {
     },
     mounted() {
         this.$nuxt.$emit('updateTitle', '怪レい日本语ヅ卫ネレーター')
+        this.$refs.inputBox.focus()
     },
     methods: {
         generate,

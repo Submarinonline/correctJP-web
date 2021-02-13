@@ -10,7 +10,7 @@
         "start": "nuxt start"
     },
     "dependencies": {
-        "cjp": "^0.6.2",
+        "cjp": "latest",
         "nuxt": "2.x",
         "nuxt-clipboard2": "0.x"
     },

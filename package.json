@@ -1,20 +1,21 @@
 {
     "name": "correctJP-web",
-    "repository": "git@github.com:DevSubmarinonline/correctJP-web.git",
+    "version": "0.1.0",
     "author": "YamaD <yamad@submarin.online>",
-    "license": "MIT",
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "generate": "nuxt generate",
-        "start": "nuxt start"
-    },
     "dependencies": {
-        "cjp": "latest",
+        "cjp": "1.x",
         "nuxt": "2.x",
-        "nuxt-clipboard2": "0.x"
+        "nuxt-clipboard2": "^0.2.1"
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "3.x"
+    },
+    "license": "MIT",
+    "repository": "git@github.com:DevSubmarinonline/correctJP-web.git",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt",
+        "generate": "nuxt generate",
+        "start": "nuxt start"
     }
 }

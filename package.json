@@ -11,7 +11,6 @@
         "@nuxtjs/tailwindcss": "3.x"
     },
     "license": "MIT",
-    "repository": "git@github.com:DevSubmarinonline/correctJP-web.git",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt",

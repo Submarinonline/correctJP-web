@@ -2,7 +2,10 @@
     "version": 2,
     "cleanUrls": true,
     "redirects": [{ "source": "/api", "destination": "/api/" }],
-    "rewrites": [{ "source": "/api/", "destination": "/api/translate" }],
+    "rewrites": [
+        { "source": "/api/", "destination": "/api/translate" },
+        { "source": "/version", "destination": "/api/version" }
+    ],
     "github": {
         "silent": true
     }

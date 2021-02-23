@@ -5,9 +5,7 @@ module.exports = (req, res) => {
         let reqData
         if (req.body) {
             if (req.body.data64) {
-                reqData = Buffer.from(req.body.data64, 'base64').toString(
-                    'utf-8'
-                )
+                reqData = Buffer.from(req.body.data64, 'base64').toString('utf-8')
             } else if (req.body.data) {
                 reqData = req.body.data
             }
@@ -26,17 +24,17 @@ module.exports = (req, res) => {
                 data: resData,
                 data64: Buffer.from(resData).toString('base64')
             })
-        } catch (err) {
+        } catch {
             res.status(500).json({
                 status: 500,
                 msg: 'Internal Server Error'
             })
         }
-    } catch (err) {
+    } catch {
         res.status(400).json({
             status: 400,
             msg: 'Bad Request',
-            log: err
+            help: 'https://correctjp.work/about/#api'
         })
     }
 }

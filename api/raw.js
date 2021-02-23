@@ -1,21 +1,17 @@
 const { generate } = require('cjp')
 
 module.exports = (req, res) => {
+    let reqData
+    if (req.body) {
+        reqData = req.body.t
+    } else if (req.query) {
+        reqData = req.query.t
+    } else {
+        res.status(400).send('Bad API Call : Please see https://correctjp.work/about/#api')
+    }
     try {
-        let reqData
-        if (req.body) {
-            reqData = req.body.t
-        } else if (req.query) {
-            reqData = req.query.t
-        } else {
-            throw 'No target text found'
-        }
-        try {
-            res.status(200).send(generate(reqData))
-        } catch (err) {
-            res.status(500).send('Server Error')
-        }
-    } catch (err) {
-        res.status(400).send('Bad API Call')
+        res.status(200).send(generate(reqData))
+    } catch {
+        res.status(500).send('Server Error')
     }
 }

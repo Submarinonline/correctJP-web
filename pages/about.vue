@@ -38,7 +38,7 @@
         </ul>
 
         <h2>APIとそゐ使い方</h2>
-        <p>Comming soon...</p>
+        <p><pre>/api/raw/{テキスト}</pre>←にGETリクエスト</p>
 
         <h2>开発者</h2>
         <p>

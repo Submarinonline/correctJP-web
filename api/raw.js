@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     } else if (req.query.t) {
         reqData = req.query.t
     } else {
-        reqData = req.url.slice(9)
+        reqData = decodeURI(req.url.slice(9))
     }
     try {
         res.status(200).send(generate(reqData))

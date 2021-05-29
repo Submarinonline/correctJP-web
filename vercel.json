@@ -17,6 +17,7 @@
     ],
     "rewrites": [
         { "source": "/api/", "destination": "/api/translate" },
+        { "source": "/api/raw/(.*)", "destination": "/api/raw" },
         { "source": "/version", "destination": "/api/version" }
     ],
     "github": {

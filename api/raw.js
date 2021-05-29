@@ -4,7 +4,7 @@ module.exports = (req, res) => {
     let reqData
     if (req.body) {
         reqData = req.body.t
-    } else if (req.query) {
+    } else if (req.query.t) {
         reqData = req.query.t
     } else {
         reqData = req.url.slice(9)

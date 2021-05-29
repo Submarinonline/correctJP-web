@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     } else if (req.query) {
         reqData = req.query.t
     } else {
-        res.status(400).send('Bad API Call : Please see https://correctjp.work/about/#api')
+        reqData = req.url.slice(9)
     }
     try {
         res.status(200).send(generate(reqData))

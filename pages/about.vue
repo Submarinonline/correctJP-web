@@ -12,7 +12,7 @@
         <ul>
             <li>
                 <a
-                    href="https://github.com/DevSubmarinonline/correctJP-web"
+                    href="https://github.com/Submarinonline/correctJP-web"
                     target="_blank"
                     >Github</a
                 >
@@ -36,14 +36,15 @@
                 >
             </li>
         </ul>
-
+<!--
         <h2>APIとそゐ使い方</h2>
         <p><pre>/api/raw/{テキスト}</pre>←にGETリクエスト</p>
         <p>もっと詳しい説明はそのうち書きます。待てない人はソース読んでください。</p>
-
+-->
         <h2>开発者</h2>
         <p>
-            <a href="https://twitter.com/yamad_linuxer" target="_blank">山D</a>
+            <a href="https://github.com/yamader" target="_blank">山D</a>
+            <a href="https://github.com/0-a-e" target="_blank">Orange</a>
             <a href="https://twitter.com/HiSubway" target="_blank"
                 >さぶラぇい</a
             >
